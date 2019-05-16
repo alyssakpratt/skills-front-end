@@ -28,7 +28,10 @@ function drawPyramid(height) {
         for (var i = 0; i < numBricks; i++) {
             rowStr += "#";
         }
-
+        var parent = document.getElementById("pyramid");
+        var child = document.createElement('p');
+        parent.appendChild(child);
+        child.after(rowStr);
         // you can delete this now
         console.log(rowStr)
 
